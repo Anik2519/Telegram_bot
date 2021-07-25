@@ -1,6 +1,7 @@
 from telegram.ext import Updater,CommandHandler,MessageHandler,Filters
 import news_fetch as news
 import query_formater as query 
+import os
 
 API_KEY = os.environ.get("API_KEY","") 
 
