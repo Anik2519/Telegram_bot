@@ -3,7 +3,7 @@ import news_fetch as news
 import query_formater as query 
 import os
 
-API_KEY = os.environ.get("API_KEY","") 
+API_KEY = os.environ["API_KEY"] 
 
 print("bot started")
 
