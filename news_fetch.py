@@ -1,12 +1,12 @@
 import requests
-
+NEWS_API_KEY= os.environ.get("NEWS_API_KEY","")
 def fetch(q):
 
     query_params = {
     "q": q,
     "qInTitle": q,
 	"sortBy": "popularity",
-	"apiKey": "88840f2089bf4c48804b6b5f2f94955e",
+	"apiKey": NEWS_API_KEY,
     "language": "en"
 	}
     main_url = " https://newsapi.org///v2/everything"
