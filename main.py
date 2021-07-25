@@ -2,7 +2,7 @@ from telegram.ext import Updater,CommandHandler,MessageHandler,Filters
 import news_fetch as news
 import query_formater as query 
 
-API_KEY = '1920559871:AAEfHMl-LVwaZNnfMNTUn3551iVo9mcuwX8'
+API_KEY = os.environ.get("API_KEY","") 
 
 print("bot started")
 
