@@ -25,7 +25,7 @@ def fetch(q):
     for ar in article:
         results= results + str(i) +". " + ar["title"] +"\n" + ar["url"] +"\n" +"\n"
         i=i+1
-        if i==16:
+        if i==18:
             break
   
     return results
